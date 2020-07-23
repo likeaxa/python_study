@@ -8,7 +8,7 @@ def maxSubArray(self, nums: List[int]) -> int:
     i = 1
     while i < len(nums):
         cur = nums[i]
-        maxVal = m0ax(cur + maxVal, cur)
+        maxVal = max(cur + maxVal, cur)
     return maxVal
 
 
